@@ -57,3 +57,12 @@ Recent work has shown that depth estimation from a stereo pair of images can be 
 - 加入tensorboard可视化需要的操作
 - 完善输入和输出
 - 整体进行训练
+
+## ---------------------------------
+## 2019-06-12更新
+- 完善整体的model
+- 加入训练SceneFlow数据集与KITTI数据集模块（data_loader为读取KITTI数据集，load_SceneFlow为读取SceneFlow数据集，由于SceneFlow数据集中，视差图为PFM格式，需要注意，为了加快数据读取的速度，在训练SceneFlow数据集时，首先需要运行generate_image_list.py得到整个数据集的地址）
+- 完成模型的保存和读取模块
+- 完成tensorboard可视化需要的操作
+- 完成输入和输出
+- 可以进行整体进行训练
